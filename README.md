@@ -19,3 +19,8 @@ We conduct four main tests:
 
 ## Conclusion
 Registration process overall is very smooth and I didn't spot any major bugs. One thing that caught my attention was that when filling out the phone number field in creating a new account, there wasn't any limit to the phone number format and a users can input any string into the field, including letters and symbols. Finally, when writing tests, I had to delay the driver in a couple places because the aninmation between steps of the registration process was too slow and would break if the the page did not completely load. 
+
+## Instructions
+To install dependencies: `npm i`
+To start the Selenium server: `npm start`
+To run the acceptance test suite: `npm test`
