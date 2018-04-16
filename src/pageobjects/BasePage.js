@@ -83,6 +83,15 @@ export default class BasePage {
     }
   }
 
+  async closePopUp () {
+    const mainWindowHandle = await this.driver.getWindowHandle()
+    const windowHandles = await this.driver.getAllWindowHandles()
+    const handle = windowHandles.slice(-1)[0] 
+    await this.driver.switchTo().window(handle);
+    await this.driver.close()
+    await this.driver.switchTo().window(mainWindowHandle);
+  }
+
   randomString () {
     var chars = 'abcdefghijklmnopqrstuvwxyz1234567890';
     var string = '';
