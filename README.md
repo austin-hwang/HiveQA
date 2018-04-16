@@ -22,5 +22,7 @@ Registration process overall is very smooth and I didn't spot any major bugs. On
 
 ## Instructions
 To install dependencies: `npm i`
+
 To start the Selenium server: `npm start`
+
 To run the acceptance test suite: `npm test`
